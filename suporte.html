@@ -6,19 +6,91 @@
     <title>Suporte | Hackeando a Ordem</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style> /* mesmos estilos */ </style>
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        body {
+            background: #0F172A;
+            color: #F8FAFC;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(251, 191, 36, 0.1);
+            border-bottom: 3px solid #FBBF24;
+        }
+        .text-gold {
+            color: #FBBF24;
+        }
+        .border-gold {
+            border-color: #FBBF24;
+        }
+        a:hover {
+            color: #FBBF24;
+        }
+        .contact-item {
+            background: rgba(15, 23, 42, 0.5);
+            border-left: 4px solid #FBBF24;
+            transition: all 0.3s;
+        }
+        .contact-item:hover {
+            transform: translateX(5px);
+            background: rgba(251, 191, 36, 0.1);
+        }
+    </style>
 </head>
-<body class="p-6">
-    <div class="max-w-2xl mx-auto glass-card p-8 rounded-3xl my-10">
-        <h1 class="text-3xl font-black mb-6 text-[#FBBF24]">Suporte</h1>
-        <p class="text-gray-300 mb-6">Em caso de dúvidas sobre o livro, problemas no acesso ou sugestões, entre em contato:</p>
+<body class="p-6 min-h-screen flex items-center justify-center">
+    <div class="max-w-2xl w-full glass-card p-8 md:p-12 rounded-3xl my-10">
+        <h1 class="text-3xl md:text-4xl font-black serif mb-6 text-gold">Suporte</h1>
+        
+        <p class="text-gray-300 mb-8 text-lg">Em caso de dúvidas sobre o livro, problemas no acesso ou sugestões, entre em contato:</p>
+        
         <div class="space-y-4">
-            <p><span class="font-bold text-white">E-mail:</span> <a href="mailto:suporte@hackeandoaordem.com.br" class="text-[#FBBF24] hover:underline">reginaldo.oliveira@catolicasc.edu.br</a></p>
-            <p><span class="font-bold text-white">WhatsApp:</span> <a href="https://wa.me/5571983008001" class="text-[#FBBF24] hover:underline" target="_blank">(71) 98300-8001</a></p>
-            <p><span class="font-bold text-white">Horário de atendimento:</span> Segunda a sexta, 9h às 17h.</p>
+            <a href="mailto:suporte@hackeandoaordem.com.br" class="contact-item p-4 rounded-lg flex items-center gap-4 text-gray-300 hover:text-white transition">
+                <div class="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-bold text-white">E-mail:</p>
+                    <p>reginaldo.oliveira@catolicasc.edu.br</p>
+                </div>
+            </a>
+            
+            <a href="https://wa.me/5571983008001" target="_blank" class="contact-item p-4 rounded-lg flex items-center gap-4 text-gray-300 hover:text-white transition">
+                <div class="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 1.766.46 3.426 1.265 4.877l-1.28 4.119 4.238-1.228c1.395.772 2.986 1.221 4.676 1.221 5.522 0 9.999-4.477 9.999-9.999s-4.477-9.999-9.999-9.999zm4.999 13.249c-.156.438-.61.799-1.01.937-.327.115-1.31.396-3.451-.915-2.236-1.362-3.573-4.045-3.683-4.229-.11-.184-.88-1.168-.88-2.229 0-1.061.556-1.582.748-1.798.192-.216.417-.27.556-.27.139 0 .278.001.4.007.128.006.3-.048.469.357.187.44.617 1.528.673 1.64.056.112.093.243.019.392-.075.149-.112.243-.224.373-.112.13-.235.29-.336.389-.112.112-.228.233-.098.457.13.224.579.956 1.242 1.549.854.762 1.574.998 1.798 1.109.224.111.355.093.486-.056.13-.149.561-.656.711-.881.15-.224.299-.187.486-.112.187.075 1.19.561 1.394.663.205.102.341.151.391.234.05.084.05.47-.106.908z"/>
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-bold text-white">WhatsApp:</p>
+                    <p>(71) 98300-8001</p>
+                </div>
+            </a>
+            
+            <div class="contact-item p-4 rounded-lg flex items-center gap-4 text-gray-300">
+                <div class="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center">
+                    <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-bold text-white">Horário de atendimento:</p>
+                    <p>Segunda a sexta, 9h às 17h</p>
+                </div>
+            </div>
         </div>
-        <div class="mt-8 text-center">
-            <a href="index.html" class="text-[#FBBF24] hover:underline">← Voltar para a página inicial</a>
+        
+        <div class="mt-12 text-center">
+            <a href="index.html" class="inline-flex items-center text-gold hover:underline text-lg">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                Voltar para a página inicial
+            </a>
         </div>
     </div>
 </body>
