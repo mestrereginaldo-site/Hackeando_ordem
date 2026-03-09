@@ -6,22 +6,65 @@
     <title>Termos de Uso | Hackeando a Ordem</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style> /* mesmos estilos */ </style>
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        body {
+            background: #0F172A;
+            color: #F8FAFC;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(251, 191, 36, 0.1);
+            border-bottom: 3px solid #FBBF24;
+        }
+        .text-gold {
+            color: #FBBF24;
+        }
+        .border-gold {
+            border-color: #FBBF24;
+        }
+        a:hover {
+            color: #FBBF24;
+        }
+    </style>
 </head>
-<body class="p-6">
-    <div class="max-w-3xl mx-auto glass-card p-8 rounded-3xl my-10">
-        <h1 class="text-3xl font-black mb-6 text-[#FBBF24]">Termos de Uso</h1>
-        <p class="text-gray-300 mb-4">Ao adquirir o livro "Hackeando a Ordem", você concorda com os seguintes termos:</p>
-        <h2 class="text-xl font-bold mt-6 mb-2 text-white">1. Direitos Autorais</h2>
-        <p class="text-gray-300 mb-4">Todo o conteúdo do livro é protegido por direitos autorais. É proibida a reprodução, distribuição ou compartilhamento não autorizado.</p>
-        <h2 class="text-xl font-bold mt-6 mb-2 text-white">2. Uso Pessoal</h2>
-        <p class="text-gray-300 mb-4">O livro é para uso pessoal e intransferível. Não é permitido revender ou distribuir cópias.</p>
-        <h2 class="text-xl font-bold mt-6 mb-2 text-white">3. Garantia e Devoluções</h2>
-        <p class="text-gray-300 mb-4">Oferecemos garantia de 7 dias para reembolso total, conforme previsto no Código de Defesa do Consumidor.</p>
-        <h2 class="text-xl font-bold mt-6 mb-2 text-white">4. Isenção de Responsabilidade</h2>
-        <p class="text-gray-300 mb-4">Os resultados apresentados no livro são baseados na experiência do autor. Resultados individuais podem variar. O autor não se responsabiliza por decisões tomadas com base no conteúdo.</p>
-        <div class="mt-8 text-center">
-            <a href="index.html" class="text-[#FBBF24] hover:underline">← Voltar para a página inicial</a>
+<body class="p-6 min-h-screen flex items-center justify-center">
+    <div class="max-w-3xl w-full glass-card p-8 md:p-12 rounded-3xl my-10">
+        <h1 class="text-3xl md:text-4xl font-black serif mb-6 text-gold">Termos de Uso</h1>
+        
+        <div class="space-y-6 text-gray-300">
+            <p>Ao adquirir o livro <strong class="text-white">"Hackeando a Ordem"</strong>, você concorda com os seguintes termos:</p>
+            
+            <div>
+                <h2 class="text-xl font-bold text-white mb-2">1. Direitos Autorais</h2>
+                <p>Todo o conteúdo do livro é protegido por direitos autorais. É proibida a reprodução, distribuição ou compartilhamento não autorizado.</p>
+            </div>
+            
+            <div>
+                <h2 class="text-xl font-bold text-white mb-2">2. Uso Pessoal</h2>
+                <p>O livro é para uso pessoal e intransferível. Não é permitido revender ou distribuir cópias.</p>
+            </div>
+            
+            <div>
+                <h2 class="text-xl font-bold text-white mb-2">3. Garantia e Devoluções</h2>
+                <p>Oferecemos garantia de 7 dias para reembolso total, conforme previsto no Código de Defesa do Consumidor.</p>
+            </div>
+            
+            <div>
+                <h2 class="text-xl font-bold text-white mb-2">4. Isenção de Responsabilidade</h2>
+                <p>Os resultados apresentados no livro são baseados na experiência do autor. Resultados individuais podem variar. O autor não se responsabiliza por decisões tomadas com base no conteúdo.</p>
+            </div>
+        </div>
+        
+        <div class="mt-10 text-center">
+            <a href="index.html" class="inline-flex items-center text-gold hover:underline text-lg">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                Voltar para a página inicial
+            </a>
         </div>
     </div>
 </body>
