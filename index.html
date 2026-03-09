@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackeando a Ordem | Dr. Reginaldo Oliveira</title>
     
-    <!-- Tailwind + Fonts -->
+    <!-- Tailwind + Fontes -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -59,14 +59,6 @@
             -webkit-text-fill-color: transparent;
         }
         
-        .timeline-dot {
-            width: 16px;
-            height: 16px;
-            background: #FBBF24;
-            border-radius: 50%;
-            box-shadow: 0 0 20px #FBBF24;
-        }
-        
         .law-symbol {
             opacity: 0.1;
             position: absolute;
@@ -83,25 +75,11 @@
         .animate-float {
             animation: float 5s ease-in-out infinite;
         }
-
-        /* FAQ Accordion */
-        .faq-question {
-            cursor: pointer;
-        }
-        .faq-answer {
-            display: none;
-        }
-        .faq-item.active .faq-answer {
-            display: block;
-        }
-        .faq-item.active .faq-icon {
-            transform: rotate(180deg);
-        }
     </style>
 </head>
 <body class="bg-pattern">
 
-    <!-- HEADER SIMPLES -->
+    <!-- HEADER -->
     <header class="fixed top-0 w-full z-50 glass-card border-t-0 border-x-0 rounded-none">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
@@ -126,21 +104,22 @@
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FBBF24] opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-[#FBBF24]"></span>
                     </span>
-                    <span class="text-sm font-bold uppercase tracking-widest text-[#FBBF24]">Método Comprovado</span>
+                    <span class="text-sm font-bold uppercase tracking-widest text-[#FBBF24]">MÉTODO COMPROVADO</span>
                 </div>
                 
                 <h1 class="text-5xl md:text-7xl font-black serif leading-[1.1] mb-8">
-                    <span class="text-white">Descubra o caminho para</span><br>
-                    <span class="text-[#FBBF24]">sua aprovação na OAB</span>
+                    <span class="text-white">Passei na OAB</span><br>
+                    <span class="text-[#FBBF24]">ainda na faculdade. E você também pode.</span>
                 </h1>
                 
                 <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-10 font-light">
-                    Aprenda a estratégia que usei para passar na OAB mesmo conciliando trabalho, família e uma rotina apertada. Um método pensado para quem não tem tempo a perder.
+                    Descubra a estratégia que usei para ser aprovado antes do TCC, sem cursinho, conciliando trabalho e família. 
+                    <span class="text-white font-semibold">Um guia técnico para quem quer resultados.</span>
                 </p>
                 
                 <div class="flex flex-col md:flex-row items-center justify-center gap-6">
                     <a href="#compra" class="btn-gold px-10 py-6 rounded-2xl text-2xl font-black tracking-tight w-full md:w-auto">
-                        QUERO CONHECER O MÉTODO
+                        QUERO ESTE MÉTODO
                     </a>
                     <div class="text-left">
                         <p class="text-[#FBBF24] text-4xl font-black">R$ 24,90</p>
@@ -158,12 +137,12 @@
         </div>
     </section>
 
-    <!-- SEÇÃO DE DORES (O PROBLEMA) -->
+    <!-- SEÇÃO DE DORES -->
     <section class="py-24 bg-[#0A0F1C]">
         <div class="container mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-[#FBBF24] font-bold uppercase tracking-[0.3em] text-sm">O diagnóstico</span>
-                <h2 class="text-4xl md:text-5xl font-black serif mt-4 mb-6">Você também sofre desses sintomas?</h2>
+                <span class="text-[#FBBF24] font-bold uppercase tracking-[0.3em] text-sm">O DIAGNÓSTICO</span>
+                <h2 class="text-4xl md:text-5xl font-black serif mt-4 mb-6">Você também se sente assim?</h2>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
@@ -173,7 +152,7 @@
                         <svg class="w-7 h-7 text-[#FBBF24]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-3">"Já passou da idade"</h3>
-                    <p class="text-gray-400">Acha que voltar a estudar depois dos 30, 40 anos é perda de tempo? Você pode se inspirar em quem conseguiu, independentemente da idade.</p>
+                    <p class="text-gray-400">Acha que voltar a estudar depois dos 30 é perda de tempo? Eu voltei depois de anos, concluí o ensino médio pelo ENEM e passei na OAB ainda na faculdade.</p>
                 </div>
                 
                 <!-- Dor 2 -->
@@ -182,7 +161,7 @@
                         <svg class="w-7 h-7 text-[#FBBF24]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-3">Medo do Vade Mecum</h3>
-                    <p class="text-gray-400">2.000 páginas, letras minúsculas, artigos que mudam toda hora. Descubra por que <strong class="text-white">decorar é o erro</strong> e como usar a lei como uma caixa de ferramentas.</p>
+                    <p class="text-gray-400">Milhares de páginas, letras miúdas, artigos que mudam. Descubra por que <strong class="text-white">decorar é o erro</strong> e como usar a lei como uma caixa de ferramentas.</p>
                 </div>
                 
                 <!-- Dor 3 -->
@@ -191,13 +170,13 @@
                         <svg class="w-7 h-7 text-[#FBBF24]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-3">Cemitério de bacharéis</h3>
-                    <p class="text-gray-400">Conhece alguém que se formou há anos e ainda não passou? A estatística é cruel: 80% reprovam. Mas você pode estar nos 20% com a estratégia certa.</p>
+                    <p class="text-gray-400">Conhece alguém formado há anos que ainda não passou? A estatística é cruel: 80% reprovam. Mas você pode estar entre os 20% com a estratégia certa.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- A PROVA DO MÉTODO (CAPA DO LIVRO EM DESTAQUE) -->
+    <!-- CAPA DO LIVRO + RESULTADOS -->
     <section class="py-24">
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-16">
@@ -205,7 +184,7 @@
                     <span class="text-[#FBBF24] font-bold uppercase tracking-[0.3em] text-sm">A PROVA</span>
                     <h2 class="text-4xl md:text-5xl font-black serif mt-4 mb-6">48 acertos na 1ª fase. Sem cursinho.</h2>
                     <p class="text-gray-300 text-lg mb-8 leading-relaxed">
-                        Este não é um livro de teoria. É o manual do estrategista que usou as próprias regras do sistema para vencer. Uma prova real de que o método funciona.
+                        Este não é um livro de teoria. É o manual do estrategista que usou as próprias regras do sistema para vencer. Com uma rotina exaustiva e depois de anos longe dos estudos, eu consegui a aprovação ainda na faculdade. O método que usei está aqui.
                     </p>
                     
                     <!-- Dados de resultado -->
@@ -236,11 +215,11 @@
         </div>
     </section>
 
-    <!-- O MÉTODO (CAPÍTULOS DESTAQUE) -->
+    <!-- O MÉTODO (4 PILARES) -->
     <section class="py-24 bg-[#0A0F1C]">
         <div class="container mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-[#FBBF24] font-bold uppercase tracking-[0.3em] text-sm">O método</span>
+                <span class="text-[#FBBF24] font-bold uppercase tracking-[0.3em] text-sm">O MÉTODO</span>
                 <h2 class="text-4xl md:text-5xl font-black serif mt-4 mb-6">A engenharia da aprovação em 4 pilares</h2>
                 <p class="text-gray-400">Não é autoajuda. É um manual técnico com o que realmente funciona.</p>
             </div>
@@ -269,7 +248,7 @@
                     <div class="w-16 h-16 bg-[#FBBF24] rounded-2xl flex items-center justify-center text-[#0F172A] font-black text-3xl flex-shrink-0">3</div>
                     <div>
                         <h3 class="text-2xl font-bold mb-2">Método dos Círculos</h3>
-                        <p class="text-gray-400">A técnica de simulados com correção ativa que me levou a 48 acertos na primeira fase.</p>
+                        <p class="text-gray-400">A técnica de simulados com correção ativa que me ajudou a garantir os 48 acertos.</p>
                     </div>
                 </div>
                 
@@ -289,7 +268,7 @@
     <section class="py-24">
         <div class="container mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-[#FBBF24] font-bold uppercase tracking-[0.3em] text-sm">apenas hoje</span>
+                <span class="text-[#FBBF24] font-bold uppercase tracking-[0.3em] text-sm">APENAS HOJE</span>
                 <h2 class="text-4xl md:text-5xl font-black serif mt-4 mb-6">Bônus exclusivos para quem agir agora</h2>
             </div>
             
@@ -329,13 +308,12 @@
         </div>
     </section>
 
-    <!-- DEPOIMENTOS (PROVA SOCIAL) -->
+    <!-- DEPOIMENTOS -->
     <section class="py-24 bg-[#0A0F1C]">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-black serif text-center mb-16">Quem aplicou o método <span class="text-[#FBBF24]">aprovou</span></h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Depoimento 1 -->
                 <div class="glass-card p-8 rounded-3xl">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-12 h-12 bg-[#FBBF24] rounded-full flex items-center justify-center text-[#0F172A] font-black text-xl">AM</div>
@@ -348,7 +326,6 @@
                     <div class="flex mt-4 text-[#FBBF24]">★★★★★</div>
                 </div>
                 
-                <!-- Depoimento 2 -->
                 <div class="glass-card p-8 rounded-3xl">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-12 h-12 bg-[#FBBF24] rounded-full flex items-center justify-center text-[#0F172A] font-black text-xl">JP</div>
@@ -361,7 +338,6 @@
                     <div class="flex mt-4 text-[#FBBF24]">★★★★★</div>
                 </div>
                 
-                <!-- Depoimento 3 -->
                 <div class="glass-card p-8 rounded-3xl">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-12 h-12 bg-[#FBBF24] rounded-full flex items-center justify-center text-[#0F172A] font-black text-xl">LS</div>
@@ -377,7 +353,7 @@
         </div>
     </section>
 
-    <!-- SEÇÃO DE COMPRA (CTA) -->
+    <!-- CALL TO ACTION - COMPRA -->
     <section id="compra" class="py-32 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-[#0F172A] to-[#1E3A8A] opacity-90"></div>
         <div class="absolute inset-0 bg-pattern opacity-20"></div>
@@ -426,37 +402,28 @@
             <h2 class="text-4xl font-black serif text-center mb-12">Dúvidas frequentes</h2>
             
             <div class="space-y-4" id="faq-container">
-                <!-- Item 1 -->
                 <div class="glass-card p-6 rounded-2xl faq-item">
                     <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg">
                         <span>Funciona mesmo para quem está há anos sem estudar?</span>
-                        <svg class="w-5 h-5 transition-transform faq-icon" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                        <svg class="w-5 h-5 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
                     </button>
-                    <div class="faq-answer mt-4 text-gray-400">
-                        Sim! O livro inteiro parte da premissa de que você está retomando os estudos. O método é desenhado para quem tem pouco tempo.
-                    </div>
+                    <p class="faq-answer mt-4 text-gray-400 hidden">Sim! O livro inteiro parte da premissa de que você está retomando os estudos. Eu mesmo voltei depois de anos e passei. O método é desenhado para quem tem pouco tempo.</p>
                 </div>
                 
-                <!-- Item 2 -->
                 <div class="glass-card p-6 rounded-2xl faq-item">
                     <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg">
                         <span>Preciso de cursinho para usar o método?</span>
-                        <svg class="w-5 h-5 transition-transform faq-icon" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                        <svg class="w-5 h-5 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
                     </button>
-                    <div class="faq-answer mt-4 text-gray-400">
-                        Não. O livro ensina a estudar por questões anteriores, que é o que realmente importa. Você pode passar sem pisar em um cursinho.
-                    </div>
+                    <p class="faq-answer mt-4 text-gray-400 hidden">Não. Passei sem pisar em um cursinho. O livro ensina a estudar por questões anteriores, que é o que realmente importa.</p>
                 </div>
                 
-                <!-- Item 3 -->
                 <div class="glass-card p-6 rounded-2xl faq-item">
                     <button class="faq-question flex justify-between items-center w-full text-left font-bold text-lg">
                         <span>E se eu não gostar?</span>
-                        <svg class="w-5 h-5 transition-transform faq-icon" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                        <svg class="w-5 h-5 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
                     </button>
-                    <div class="faq-answer mt-4 text-gray-400">
-                        Ofereço 7 dias de garantia incondicional. Se não ficar satisfeito, devolvo 100% do seu dinheiro, sem perguntas.
-                    </div>
+                    <p class="faq-answer mt-4 text-gray-400 hidden">Ofereço 7 dias de garantia incondicional. Se não ficar satisfeito, devolvo 100% do seu dinheiro, sem perguntas.</p>
                 </div>
             </div>
         </div>
@@ -480,11 +447,24 @@
     <script>
         AOS.init({ duration: 800, once: true });
         
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const item = button.closest('.faq-item');
-                item.classList.toggle('active');
+        // FAQ Accordion - funciona ao clicar no botão
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const btn = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const icon = btn.querySelector('svg');
+            
+            btn.addEventListener('click', () => {
+                // Fecha os outros itens (opcional, pode remover se quiser manter vários abertos)
+                // document.querySelectorAll('.faq-item').forEach(otherItem => {
+                //     if (otherItem !== item) {
+                //         otherItem.querySelector('.faq-answer').classList.add('hidden');
+                //         otherItem.querySelector('svg').classList.remove('rotate-180');
+                //     }
+                // });
+                
+                // Abre/fecha o atual
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
             });
         });
     </script>
